@@ -36,4 +36,4 @@ const startService = async () => {
   }
 };
 
-startService();
+module.exports = { startService };

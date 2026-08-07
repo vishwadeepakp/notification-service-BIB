@@ -5,13 +5,14 @@
   "license": "ISC",
   "author": "",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "dotenv": "^17.4.2",
+    "express": "^5.2.1",
     "kafkajs": "^2.2.4",
     "nodemailer": "^6.10.1"
   }
