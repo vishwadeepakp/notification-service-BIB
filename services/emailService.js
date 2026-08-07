@@ -6,7 +6,9 @@ class EmailService {
     const emailPass = process.env.EMAIL_PASS?.replace(/\s+/g, '').trim();
 
     this.transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: 'smtp.gmail.com',  // 👈 Explicit Host
+      port: 465,               // 👈 Port 465 (SSL) - Render पर कभी ब्लॉक नहीं होता!
+      secure: true,
       auth: {
         user: emailUser,
         pass: emailPass,
